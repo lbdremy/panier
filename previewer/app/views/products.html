@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %}
+	{{title}}
+{% endblock %}
+{% block content %}
+    <ul class="col-1-1">
+    	{% for product in products %}
+    		<li>
+    			<p><b>{{ product.name }}</b> pour <i>{{ product.price }}€ </i><p>
+    			<table>
+    				<tr>
+    					<td>
+    						<img src="{{ product.imageUrl }}" style="height:75px">
+    					</td>
+    					<td>
+
+    					</td>
+    					<td>
+    						<p>{{ product.description }}</p>
+    					</td>
+    				</tr>
+    			</table>
+    		</li>
+    	{% endfor %}
+    </ul>
+{% endblock %}
