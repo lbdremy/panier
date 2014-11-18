@@ -3,6 +3,7 @@
 	{{title}}
 {% endblock %}
 {% block content %}
+	<p> {{ products.length }} produits! </p>
     <ul class="col-1-1">
     	{% for product in products %}
     		<li>
@@ -10,7 +11,7 @@
     			<table>
     				<tr>
     					<td>
-    						<img src="{{ product.imageUrl }}" style="height:75px">
+    						<img src="{{ product.imageUrl }}" style="height:120px">
     					</td>
     					<td>
 
